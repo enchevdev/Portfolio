@@ -1,0 +1,96 @@
+body {
+  margin: 0;
+  background-color: black;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 40px;
+}
+
+.logo {
+  color: darkslategray;
+  font-size: 22px;
+  margin-right: 20px;
+}
+
+.navbar a {
+  color: darkgray;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  color: white;
+}
+
+.about {
+  display: flex;
+  justify-content: center;
+  padding: 80px 20px;
+}
+
+.about-box {
+  max-width: 800px;
+  background-color: #111;
+  border: 1px solid darkslategray;
+  border-radius: 12px;
+  padding: 40px;
+  line-height: 1.8;
+}
+
+.about-box h2 {
+  color: darkslategray;
+  margin-bottom: 20px;
+}
+
+.about-box p {
+  color: darkgray;
+}
+
+
+.info-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.mini-box {
+  background-color: #0d0d0d;
+  border: 1px solid darkslategray;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.mini-box h3 {
+  color: darkslategray;
+  margin: 0 0 5px 0;
+}
+
+.mini-box p {
+  margin: 0;
+  color: darkgray;
+}
+
+
+.cv {
+  margin-top: 20px;
+}
+
+.cv a {
+  display: inline-block;
+  padding: 10px 15px;
+  border: 1px solid darkslategray;
+  color: darkslategray;
+  text-decoration: none;
+  border-radius: 8px;
+}
+
+.cv a:hover {
+  color: white;
+  border-color: white;
+}
