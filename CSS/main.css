@@ -5,6 +5,7 @@ body {
   font-family: Arial, sans-serif;
 }
 
+
 .navbar {
   display: flex;
   align-items: center;
@@ -22,11 +23,13 @@ body {
   color: darkgray;
   text-decoration: none;
   font-size: 14px;
+  transition: 0.2s ease;
 }
 
 .navbar a:hover {
   color: white;
 }
+
 
 .hero {
   display: flex;
@@ -35,6 +38,7 @@ body {
   padding: 80px 120px;
   gap: 120px;
 }
+
 
 .content {
   flex: 1;
@@ -47,12 +51,14 @@ body {
   margin: 10px 0 20px 0;
 }
 
+
 .list {
   list-style: none;
   padding: 0;
   color: darkgray;
   line-height: 1.8;
 }
+
 
 .cards {
   flex: 1;
@@ -66,17 +72,19 @@ body {
   border: 1px solid darkslategray;
   border-radius: 12px;
   padding: 20px;
+  transition: 0.2s ease;
 }
 
-
-.cards{
-  padding-top: 4rem;
+.card:hover {
+  transform: translateY(-5px);
+  border-color: white;
 }
 
 .card h3 {
   margin: 0 0 10px 0;
   color: darkslategray;
 }
+
 
 .icons {
   display: flex;
@@ -88,4 +96,51 @@ body {
   width: 35px;
   height: 35px;
   object-fit: contain;
+}
+
+
+
+@media (max-width: 1024px) {
+  .hero {
+    padding: 40px;
+    gap: 60px;
+  }
+
+  .cards {
+    gap: 15px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    padding: 20px;
+    gap: 40px;
+  }
+
+  .intro {
+    font-size: 32px;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .intro {
+    font-size: 26px;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
 }
