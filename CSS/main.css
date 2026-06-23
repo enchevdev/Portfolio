@@ -22,7 +22,6 @@ body {
   color: darkgray;
   text-decoration: none;
   font-size: 14px;
-  transition: 0.2s ease;
 }
 
 .navbar a:hover {
@@ -30,42 +29,36 @@ body {
 }
 
 .hero {
-  min-height: 80vh;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 0 80px;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 80px 120px;
+  gap: 120px;
 }
 
-.hero h2 {
-  color: darkgray;
-  font-size: 18px;
-  margin: 0;
+.content {
+  flex: 1;
+  max-width: 500px;
 }
 
 .intro {
   color: darkslategray;
   font-size: 48px;
   margin: 10px 0 20px 0;
-
 }
 
-
-.intro-list {
-  color: darkgray;
-  font-size: 15px;
-  line-height: 1.8;
-  margin-bottom: 8px;
+.list {
   list-style: none;
+  padding: 0;
+  color: darkgray;
+  line-height: 1.8;
 }
-
-
 
 .cards {
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
-  margin-top: 30px;
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
 }
 
 .card {
@@ -73,27 +66,26 @@ body {
   border: 1px solid darkslategray;
   border-radius: 12px;
   padding: 20px;
-  width: 220px;
+}
+
+
+.cards{
+  padding-top: 4rem;
 }
 
 .card h3 {
-  color: darkslategray;
   margin: 0 0 10px 0;
+  color: darkslategray;
 }
 
-.card p {
-  color: darkgray;
-  font-size: 14px;
+.icons {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+.icons img {
+  width: 35px;
+  height: 35px;
+  object-fit: contain;
 }
