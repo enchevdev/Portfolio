@@ -1,0 +1,58 @@
+body {
+  margin: 0;
+  background-color: black;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 40px;
+}
+
+.logo {
+  color: darkslategray;
+  font-size: 22px;
+  margin-right: 20px;
+}
+
+.navbar a {
+  color: darkgray;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  color: white;
+}
+
+.projects {
+  display: flex;
+  justify-content: center;
+  padding: 100px 20px;
+}
+
+.projects-box {
+  max-width: 700px;
+  background-color: #111;
+  border: 1px solid darkslategray;
+  border-radius: 12px;
+  padding: 40px;
+  text-align: center;
+}
+
+.projects-box h2 {
+  color: darkslategray;
+  margin-bottom: 20px;
+}
+
+.coming {
+  font-size: 28px;
+  color: darkslategray;
+  margin-bottom: 10px;
+}
+
+.text {
+  color: darkgray;
+}
