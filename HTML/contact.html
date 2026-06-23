@@ -1,11 +1,78 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/CSS/contact.css" />
+    <title>Contact</title>
+  </head>
+
+  <body>
+
+    <nav class="navbar">
+      <h1 class="logo">Serkan Enchev</h1>
+
+      <a href="/HTML/index.html">HOME</a>
+      <a href="/HTML/about.html">ABOUT</a>
+      <a href="/HTML/projects.html">PROJECTS</a>
+      <a href="/HTML/contact.html">CONTACT</a>
+    </nav>
+
+    <main class="contact">
+
+      <div class="contact-container">
+
+
+        <div class="contact-left">
+
+          <h2 class="green-title">Contact me</h2>
+
+          <p class="subtitle">
+            Let's build something great together. I'm always open for new ideas, collaborations or freelance work.
+          </p>
+
+          <div class="info-boxes">
+
+            <div class="info-box">
+              <h3>WhatsApp</h3>
+              <p>+32 486 629 337</p>
+            </div>
+
+            <div class="info-box">
+              <h3>Address</h3>
+              <p>Gent, Belgium</p>
+              <a href="https://www.google.com/maps" target="_blank">View on Google Maps</a>
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <div class="contact-right">
+
+    <form class="form" id="contactForm">
+
+  <input type="text" id="name" placeholder="Your Name" />
+  <small class="error" id="nameError"></small>
+
+  <input type="email" id="email" placeholder="Your Email" />
+  <small class="error" id="emailError"></small>
+
+  <textarea id="message" placeholder="Your Message"></textarea>
+  <small class="error" id="messageError"></small>
+
+  <button type="submit">Send Message</button>
+
+  <p class="success" id="successMsg"></p>
+
+</form>
+
+        </div>
+
+      </div>
+
+    </main>
+
+  </body>
 </html>
