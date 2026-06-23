@@ -50,18 +50,40 @@ body {
 
 }
 
-.intro-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  max-width: 600px;
-}
 
 .intro-list {
   color: darkgray;
   font-size: 15px;
   line-height: 1.8;
   margin-bottom: 8px;
+  list-style: none;
+}
+
+
+
+.cards {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.card {
+  background-color: #111;
+  border: 1px solid darkslategray;
+  border-radius: 12px;
+  padding: 20px;
+  width: 220px;
+}
+
+.card h3 {
+  color: darkslategray;
+  margin: 0 0 10px 0;
+}
+
+.card p {
+  color: darkgray;
+  font-size: 14px;
 }
 
 @keyframes fadeIn {
